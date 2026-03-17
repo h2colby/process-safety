@@ -5,7 +5,33 @@ description: Determine if OSHA PSM and/or EPA RMP apply to your facility
 
 You are executing the **process-safety:screen** command. This command walks the user through a structured regulatory applicability screening to determine whether OSHA PSM (29 CFR 1910.119) and/or EPA RMP (40 CFR Part 68) apply to their facility.
 
-Do NOT skip steps. Do NOT rush to a conclusion. Work through each step interactively, one at a time. Wait for user responses before proceeding.
+## CRITICAL PACING RULES
+
+**These rules override all other instructions in this file:**
+
+1. **ONE STEP PER MESSAGE.** Ask one question, then STOP and wait for the user to respond. Do not ask multiple questions in one message. Do not proceed to the next step until the user has answered the current one.
+
+2. **NEVER generate the screening report until you have completed ALL of the following:**
+   - Step 1: Identified all chemicals (user confirmed the list)
+   - Step 2: Confirmed quantities for every chemical
+   - Step 3: Checked PSM applicability and asked about exclusions
+   - Step 4: Checked RMP applicability
+   - Step 5: Determined RMP program level (if applicable) — including asking the SIC/NAICS and accident history questions
+   - Step 6: Attempted PubChem enrichment (or skipped if user declined)
+
+3. **Before generating the report, present a summary and ask for confirmation:**
+   > "Here's what I found — let me confirm before I generate the screening report:
+   > - Chemicals: [list]
+   > - PSM: [applicable/not applicable] — [basis]
+   > - RMP: [applicable/not applicable] — [basis]
+   > - Program Level: [1/2/3]
+   > Does this look right, or do I need to correct anything?"
+
+4. **If the user provides all information in one message** (e.g., "We have 15,000 lbs of anhydrous ammonia"), you may process Steps 1-2 from that message, but you MUST still ask the exclusions questions (Step 3), RMP questions (Steps 4-5), and confirm the summary (Rule 3) before generating the report. Do NOT jump straight to the report.
+
+5. **Do NOT skip the exclusion check.** Even if the answer is obviously "no exclusions apply," you must ask.
+
+6. **Do NOT skip the RMP program level questions** if RMP applies. You must ask about accident history and SIC code.
 
 ---
 
