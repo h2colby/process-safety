@@ -1,0 +1,8 @@
+{
+  "name": "process-safety",
+  "description": "OSHA PSM (29 CFR 1910.119) and EPA RMP (40 CFR Part 68) compliance toolkit. Screens chemical applicability, generates audit-ready program documentation, calculates OCA distances, and guides implementation for hard tech startups.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Colby @ Tobe Energy"
+  }
+}

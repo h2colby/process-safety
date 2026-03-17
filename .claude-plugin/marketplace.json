@@ -1,57 +1,32 @@
 {
-  "name": "process-safety",
-  "version": "0.1.0",
-  "description": "OSHA PSM (29 CFR 1910.119) and EPA RMP (40 CFR Part 68) compliance toolkit. Screens chemical applicability, generates audit-ready program documentation, and guides implementation for hard tech startups.",
-  "author": "Colby @ Tobe Energy",
-  "license": "MIT",
-  "commands": [
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "h2colby-process-safety",
+  "description": "Federal process safety compliance toolkit — OSHA PSM and EPA RMP",
+  "owner": {
+    "name": "Colby @ Tobe Energy"
+  },
+  "plugins": [
     {
-      "name": "help",
-      "description": "Plugin overview, PSM basics, and command reference"
-    },
-    {
-      "name": "screen",
-      "description": "Determine if OSHA PSM and/or EPA RMP apply to your facility"
-    },
-    {
-      "name": "generate",
-      "description": "Generate a complete, audit-ready PSM program document set"
-    },
-    {
-      "name": "status",
-      "description": "View implementation progress dashboard"
-    },
-    {
-      "name": "implement",
-      "description": "Get guided, step-by-step implementation coaching"
-    },
-    {
-      "name": "test",
-      "description": "Validate generated PSM program against 12-point audit-ready checklist"
-    },
-    {
-      "name": "oca",
-      "description": "Calculate offsite consequence analysis — distance to endpoint for worst-case and alternative release scenarios"
-    },
-    {
-      "name": "rmp",
-      "description": "Generate RMP data package for EPA submission — all fields required by 40 CFR 68.150-68.185"
+      "name": "process-safety",
+      "description": "OSHA PSM (29 CFR 1910.119) and EPA RMP (40 CFR Part 68) compliance toolkit. Screens chemical applicability, generates audit-ready program documentation, calculates OCA distances, and guides implementation for hard tech startups.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Colby @ Tobe Energy"
+      },
+      "source": ".",
+      "category": "compliance",
+      "keywords": [
+        "process-safety",
+        "psm",
+        "rmp",
+        "osha",
+        "epa",
+        "compliance",
+        "chemical-safety",
+        "oca",
+        "offsite-consequence-analysis"
+      ],
+      "homepage": "https://github.com/h2colby/process-safety"
     }
-  ],
-  "skills": [
-    {
-      "name": "psm-compliance",
-      "description": "Core PSM/RMP regulatory knowledge — loads automatically when process safety work is detected"
-    }
-  ],
-  "hooks": [
-    {
-      "event": "session-start",
-      "description": "Detects existing PSM projects and shows status"
-    }
-  ],
-  "data": [
-    "data/appendix-a.json",
-    "data/rmp-chemicals.json"
   ]
 }
