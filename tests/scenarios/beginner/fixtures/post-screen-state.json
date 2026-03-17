@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "screening": {
+    "completed": true,
+    "psm_applicable": true,
+    "rmp_applicable": true,
+    "rmp_program_level": 3
+  },
+  "chemicals": [
+    {
+      "name": "Ammonia, Anhydrous",
+      "cas": "7664-41-7",
+      "max_qty_lbs": 15000,
+      "psm_tq": 10000,
+      "rmp_tq": 10000,
+      "triggers_psm": true,
+      "triggers_rmp": true
+    }
+  ]
+}

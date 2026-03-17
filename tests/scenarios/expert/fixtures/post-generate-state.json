@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "company": {
+    "name": "HydroChem Inc",
+    "location": "Dallas, TX",
+    "employee_count": 12
+  },
+  "screening": {
+    "completed": true,
+    "psm_applicable": true,
+    "rmp_applicable": true,
+    "rmp_program_level": 3,
+    "method": "inline_verification"
+  },
+  "chemicals": [
+    {
+      "name": "Hydrogen",
+      "cas": "1333-74-0",
+      "max_qty_lbs": 10000,
+      "psm_tq": 10000,
+      "triggers_psm": true,
+      "triggers_rmp": true
+    },
+    {
+      "name": "Ammonia, Anhydrous",
+      "cas": "7664-41-7",
+      "max_qty_lbs": 15000,
+      "psm_tq": 10000,
+      "triggers_psm": true,
+      "triggers_rmp": true
+    }
+  ],
+  "covered_processes": [
+    {
+      "id": "CP-001",
+      "name": "H2 Production Unit",
+      "primary_chemical": "Hydrogen"
+    },
+    {
+      "id": "CP-002",
+      "name": "NH3 Refrigeration System",
+      "primary_chemical": "Ammonia, Anhydrous"
+    }
+  ],
+  "organization": {
+    "psm_program_manager": "Sarah (VP Operations)",
+    "psm_coordinator": "Mike (Safety Engineer)",
+    "operations_manager": "Tom (Plant Manager)",
+    "maintenance_manager": "Carlos (Maintenance Lead)",
+    "training_coordinator": "Mike (Safety Engineer)",
+    "records_manager": "Lisa (Admin)"
+  },
+  "generation": {
+    "completed": true,
+    "document_count": 41
+  },
+  "implementation": {
+    "phase": "psi_compilation"
+  },
+  "existing_documentation": {
+    "pids": true,
+    "safety_manual": true,
+    "formal_psm_procedures": false
+  }
+}

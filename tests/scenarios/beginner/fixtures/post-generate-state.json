@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "company": {
+    "name": "TestCo"
+  },
+  "screening": {
+    "completed": true,
+    "psm_applicable": true
+  },
+  "generation": {
+    "completed": true,
+    "document_count": 41
+  },
+  "implementation": {
+    "phase": "psi_compilation"
+  }
+}
