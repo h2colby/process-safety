@@ -13,7 +13,7 @@
       "author": {
         "name": "Colby @ Tobe Energy"
       },
-      "source": ".",
+      "source": "./",
       "category": "compliance",
       "keywords": [
         "process-safety",
